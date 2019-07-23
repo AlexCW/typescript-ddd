@@ -6,9 +6,13 @@ const port = 3000;
 
 app.use('/movies', movieRouter)
 
-app.listen(port, err => {
-  if (err) {
-    return console.error(err);
-  }
-  return console.log(`server is listening on ${port}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(port, err => {
+    if (err) {
+      return console.error(err);
+    }
+    return console.log(`server is listening on ${port}`);
+  });
+}
+
+module.exports = app;
