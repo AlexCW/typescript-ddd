@@ -1,4 +1,4 @@
-import { BaseController } from '../BaseController';
+import BaseController from '../BaseController';
 
 class CreateMovieController extends BaseController {
   protected async executeImpl(): Promise<void | any> {
@@ -10,4 +10,4 @@ class CreateMovieController extends BaseController {
   }
 }
 
-export { CreateMovieController };
+export { CreateMovieController as default };

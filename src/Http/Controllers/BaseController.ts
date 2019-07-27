@@ -5,7 +5,7 @@ const enum responseCodes {
   HTTP_INTERNAL_SERVER_ERROR = 500
 }
 
-export abstract class BaseController {
+export default abstract class BaseController {
   protected req: express.Request;
 
   protected res: express.Response;
