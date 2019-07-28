@@ -4,6 +4,7 @@ import movieRouter from './Http/Routers/MovieRouter';
 const app = express();
 const port = 3000;
 
+app.use(express.json());
 app.use('/movies', movieRouter);
 
 if (process.env.NODE_ENV !== 'test') {
