@@ -5,6 +5,8 @@ interface GenreDTO {
   name: string;
 }
 
+type GenreCollectionDTO = GenreDTO[];
+
 export interface MovieDTO {
   movieId: string;
   title: string;
@@ -13,5 +15,5 @@ export interface MovieDTO {
   country: string;
   releaseYear: string;
   certificate: Certificate[];
-  genres: GenreDTO[];
+  genres: GenreCollectionDTO;
 }
