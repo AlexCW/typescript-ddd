@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use('/movies', movieRouter);
+app.use('/api/movies', movieRouter);
 
 if (process.env.NODE_ENV !== 'test') {
   app.listen(port, (err) => {
