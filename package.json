@@ -30,7 +30,9 @@
     "start:dev": "nodemon",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint '**/*.js' '**/*.ts' --ignore-pattern node_modules/ --ignore-pattern dist/"
+    "lint": "eslint '**/*.js' '**/*.ts' --ignore-pattern node_modules/ --ignore-pattern dist/",
+    "setup": "sh scripts/setup.sh",
+    "update": "sh scripts/update.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
